@@ -1,0 +1,15 @@
+{
+  "name": "swagshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Wong",
+  "license": "ISC",
+  "dependencies": {
+    "braintree": "^1.40.0",
+    "express": "^4.14.0"
+  }
+}

@@ -30,9 +30,8 @@ router.get('/get_token', function (req,res) {
  PROCESS PAYMENT
 ================*/
 router.post('/pay', function (req, res) {
-  console.log("test");
     var nonce = req.body.payment_method_nonce;
-
+console.log(nonce);
     gateway.transaction.sale({
         amount: '3.50',
         paymentMethodNonce: nonce

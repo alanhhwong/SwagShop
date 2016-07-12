@@ -9,6 +9,7 @@
   "author": "Alan Wong",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "braintree": "^1.40.0",
     "express": "^4.14.0"
   }

@@ -43,18 +43,4 @@ console.log(nonce);
     });
 });
 
-/*==============
-FACEBOOK WEBHOOK
-==============*/
-router.get('/webhook', function (req, res) {
-  if (req.query['hub.mode'] === 'subscribe' &&
-      req.query['hub.verify_token'] === 'swagshop_verify_token') {
-        console.log('FB Webhook verification request received');
-        res.status(200).send(req.query['hub.challenge']);
-  } else {
-    console.error('Failed FB Webhook verification');
-    res.sendStatus(403);
-  }
-});
-
 module.exports = router;

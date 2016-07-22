@@ -43,4 +43,14 @@ console.log(nonce);
     });
 });
 
+/*==============
+FACEBOOK WEBHOOK
+==============*/
+router.post('/webhook', function (req, res) {
+  if (req.query['hub.mode'] === 'subscribe' &&
+      req.query['hub.verify_token' === 'swagshop_verify_token') {
+        res.status(200).send(req.query['hub.challenge']);
+  }
+});
+
 module.exports = router;

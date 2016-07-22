@@ -2,7 +2,7 @@
 var express = require('express');
 var request = require('request');
 var router = express.Router();
-var PAGE_ACCESS_TOKEN = 'EAAdgtDL3zSoBAMvvzNBFujxYVRrZBBJc3ZAGWRSMyGmu3BOBjZBWMa2aZCIphXR9T6HNly2TAflc2Pm8ZCqWRivlZAB7RDi8LtaiG7S2bNh18fNaGbQ5K27CZBCtQOinFlSy6OaLGIqZAQgMxMbCKZBnTwZCsuSVk393ZCZAkb59cx1DRgZDZD';
+var PAGE_ACCESS_TOKEN = <YOUR PAGE ACCESS TOKEN>;
 
 /*===========================
 FACEBOOK BOT WEBHOOK (verify)

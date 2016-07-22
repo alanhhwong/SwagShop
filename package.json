@@ -11,6 +11,8 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "braintree": "^1.40.0",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "https": "^1.0.0"
   }
 }

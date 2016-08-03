@@ -1,8 +1,9 @@
 'use strict';
+var config = require('../config').facebook;
 var express = require('express');
 var request = require('request');
 var router = express.Router();
-var PAGE_ACCESS_TOKEN = <YOUR PAGE ACCESS TOKEN>;
+var PAGE_ACCESS_TOKEN = config.PAGE_ACCESS_TOKEN;
 
 /*===========================
 FACEBOOK BOT WEBHOOK (verify)

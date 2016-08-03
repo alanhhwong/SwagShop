@@ -1,7 +1,6 @@
 'use strict';
 var express = require('express');
 var router = express.Router();
-var config = require('./config').braintree;
 
 /*=====
  SETUP
@@ -9,9 +8,9 @@ var config = require('./config').braintree;
 var braintree = require('braintree');
 var gateway = braintree.connect({
     environment:  braintree.Environment.Sandbox,
-    merchantId:   config.MERCHANT_ID,
-    publicKey:    config.PUBLIC_KEY,
-    privateKey:   config.PRIVATE_KEY
+    merchantId:   process.env.BT_MERCHANT_ID,
+    publicKey:    process.env.BT_PUBLIC_KEY,
+    privateKey:   process.env.BT_PRIVATE_KEY
 });
 
 router.get('/', function (req, res) {

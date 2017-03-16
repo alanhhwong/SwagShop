@@ -33,7 +33,7 @@ router.post('/pay', function (req, res) {
     var nonce = req.body.payment_method_nonce;
 console.log(nonce);
     gateway.transaction.sale({
-        amount: '3.50',
+        amount: '3.00',
         paymentMethodNonce: nonce
     }, function (err, result) {
         if (result.success) {
